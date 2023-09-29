@@ -1,0 +1,127 @@
+/* https://www.hiclipart.com - är 2st bilder ifrån. Kommenterar endast 
+det jag tycker är viktigast i denna fil. */
+
+body{
+    background-color: #F7F5EB;
+    margin: 0px;
+    padding: 0px;
+}
+input[type=text], input[type=password]{ /* Inmatningsfälten för inloggning*/
+    box-sizing: border-box;
+    width: 200px;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 2px solid white;
+    border-radius: 25px;
+    outline: none;
+    background-color: #D7C0AE;
+    color: white;
+}
+input[type=submit],input[type=button]{/*Knapparna för in/ut loggning*/
+    box-sizing: border-box;
+    width: 100px;
+    padding: 5px 10px;
+    margin: 8px 0;
+    border: 2px solid white;
+    border-radius: 25px;
+    outline: none;
+    background-color: #96B6C5;
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    font-weight:600; 
+    font-style: normal;
+    margin:0px;
+    padding:5px;
+}
+/*Effekt för att ändra bakgrundsfärg och muspekare över in/ut loggning*/
+input[type=submit]:hover,input[type=button]:hover{ 
+    background-color: #D7C0AE;
+    cursor: pointer;
+}
+
+p {
+    color:rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    font-weight: bold; 
+    font-style: normal;
+    margin:0px;
+    padding: 0%;
+ }
+.rubrik { /*Detta är för rubriken Tidaholms Brukshundsklubb*/
+    display: block;
+    overflow: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 10px;
+    width: 50%; /*Centrerad*/
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: #96B6C5;
+}
+.rubrik h1 {
+    text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
+}
+
+.huvud {  /*Första sidan med input fält*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 0px;
+    width: 50%; /*Centrerad*/
+    height: 300px;
+    padding: 10px;
+    text-align: left;
+    background-color: #B7C4CF;
+    background-image: url('../images/toys.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+    
+}
+.huvud h2{
+    text-align: center;
+}
+    .inloggad { /*Fönster vid lyckad inloggning*/
+        display: none; /*Denna är "gömd" om man inte är inloggad*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(255, 255, 255);
+        margin: auto;
+        margin-top: 0px;
+        width: 50%; /*Centrerad*/
+        height: 300px;
+        padding: 10px;
+        text-align: center;
+        background-color: #B7C4CF;
+        background-image: url('../images/hund.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+.regler{ /*Denna finns alltid med oavsett var man är*/
+    display: block; /*Visas alltid*/
+    overflow: auto; /*Skapar en scroll vid mycket information*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(255, 255, 255);
+    margin: auto;
+    margin-top:0px;
+    width: 50%;
+    height: 200px;
+    padding: 10px;
+    text-align: left;
+    border-bottom-left-radius: 25px;
+    background-color: #96B6C5;
+}
+.regler h3{
+    text-align: center;
+}
+#felmeddelande { /*textstil för felmeddelanden*/
+    color:rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    font-weight: 400;
+    margin-top:20px;
+}
