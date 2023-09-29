@@ -55,6 +55,7 @@ function loggedIn(){
         localStorage.setItem("trueFalse", false);
         visaHuvud.style.display = "block";
         inLoggad.style.display = "none";
+        logoutButton.remove();
         location.reload();
         console.log("Du loggades ut.")
     });
